@@ -1,11 +1,11 @@
 from sqlalchemy import Column, Integer, Boolean
 
-from database.main_db.database import  Base
+from database.main_db.database import Base
 
 class Admin(Base):
     __tablename__ = 'admin'
 
-    telegram_id = Column(Integer, primaty_key=True)
+    telegram_id = Column(Integer, primary_key=True)
     teacher_mode = Column(Boolean, default=False)
 
     def __repr__(self):

@@ -5,7 +5,7 @@ from database.main_db.database import  Base
 class TeacherDiscipline(Base):
     __tablename__ = 'teacher_disciplines'
 
-    id = Column(Integer, primaty_key=True, autoincrement=False)
+    id = Column(Integer, primary_key=True, autoincrement=False)
     discipline_id = Column(Integer, ForeignKey('disciplines.id'), nullable=False)
     teacher_id = Column(Integer, ForeignKey('teachers.id'), nullable=False)
 

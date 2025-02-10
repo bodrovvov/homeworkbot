@@ -5,7 +5,7 @@ from database.main_db.database import  Base
 class Discipline(Base):
     __tablename__ = 'disciplines'
 
-    id = Column(Integer, primaty_key=True, autoincrement=False)
+    id = Column(Integer, primary_key=True, autoincrement=False)
     full_name = Column(String, nullable=False)
     short_name = Column(String, nullable=False)
     path_to_test = Column(String, nullable=False)

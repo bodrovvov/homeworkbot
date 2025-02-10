@@ -5,7 +5,7 @@ from database.main_db.database import  Base
 class AssignedDiscipline(Base):
     __tablename__ = 'assigned_discipline'
 
-    id = Column(Integer, primaty_key=True)
+    id = Column(Integer, primary_key=True)
     discipline_id = Column(Integer, ForeignKey('disciplines.id'), nullable=False)
     student_id = Column(Integer, ForeignKey('students.id'), nullable=False)
     point = Column(Float, default=0)
